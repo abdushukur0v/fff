@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Список желаемых покупок</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+      background: #f4f0ff;
+    }
+
+    .wishlist-box {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .wishlist-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .wishlist-header h2 {
+      font-size: 20px;
+      color: #333;
+    }
+
+    .wishlist-header a {
+      color: #a154f5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      text-align: left;
+      font-size: 14px;
+      color: #888;
+      padding: 12px 10px;
+    }
+
+    td {
+      padding: 15px 10px;
+      border-top: 1px solid #f0f0f0;
+      vertical-align: top;
+    }
+
+    .item-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .item-sub {
+      font-size: 13px;
+      color: #777;
+    }
+
+    .icon {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      text-align: center;
+      line-height: 32px;
+      font-size: 18px;
+      color: #fff;
+      margin-right: 10px;
+    }
+
+    .cat {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 12px;
+      border-radius: 12px;
+      color: #fff;
+    }
+
+    .Манга     { background: #b98fff; }
+    .Фигурки   { background: #ff7fad; }
+    .Мерч      { background: #fdd44a; color: #000; }
+    .Подписки  { background: #83aaff; }
+    .Мероприятия { background: #74e49d; color: #000; }
+
+    .priority {
+      padding: 4px 8px;
+      font-size: 12px;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .Высокий { background: #ff5a5a; }
+    .Средний { background: #fcb045; }
+    .Низкий  { background: #4cd964; }
+  </style>
+</head>
+<body>
+
+<div class="wishlist-box">
+  <div class="wishlist-header">
+    <h2>Список желаемых покупок</h2>
+    <a href="#">+ Добавить</a>
+  </div>
+<table>
+    <thead>
+      <tr>
+        <th>Название</th>
+        <th>Категория</th>
+        <th>Цена</th>
+        <th>Приоритет</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div style="display:flex; align-items:center;">
+            <div class="icon" style="background:#b98fff;">📚</div>
+            <div>
+              <div class="item-title">Манга"ПОДНЯТИЕ УРОВНЯ В ОДИНОЧКУ"</div>
+              <div class="item-sub">все тома</div>
+            </div>
+          </div>
+        </td>
+        <td><span class="cat Манга">Манга</span></td>
+        <td>1600 сом</td>
+        <td><span class="priority Высокий">Высокий</span></td>
+      </tr>
+
+      <tr>
+        <td>
+          <div style="display:flex; align-items:center;">
+            <div class="icon" style="background:#ff7fad;">🎎</div>
+            <div>
+              <div class="item-title">Фигурка Сатору Годжо</div>
+              <div class="item-sub">Лимитированное издание</div>
+            </div>
+          </div>
+        </td>
+        <td><span class="cat Фигурки">Фигурки</span></td>
+        <td>1200 сом</td>
+        <td><span class="priority Средний">Средний</span></td>
+      </tr>
+
+      <tr>
+        <td>
+          <div style="display:flex; align-items:center;">
+            <div class="icon" style="background:#fdd44a; color:#000;">👕</div>
+            <div>
+              <div class="item-title">Футболка "Пакемон"</div>
+              <div class="item-sub">Размер L</div>
+            </div>
+          </div>
+        </td>
+        <td><span class="cat Мерч">Мерч</span></td>
+        <td>1 800 сом</td>
+        <td><span class="priority Низкий">Низкий</span></td>
+      </tr>
+
+      <tr>
+        <td>
+          <div style="display:flex; align-items:center;">
+            <div class="icon" style="background:#83aaff;">💻</div>
+            <div>
+              <div class="item-title">Годовая подписка Crunchyroll</div>
+              <div class="item-sub">Премиум план</div>
+            </div>
+          </div>
+        </td>
+        <td><span class="cat Подписки">Подписки</span></td>
+        <td>5 900 сом</td>
+        <td><span class="priority Высокий">Высокий</span></td>
+      </tr>
+ <tr>
+        <td>
+          <div style="display:flex; align-items:center;">
+            <div class="icon" style="background:#394d4f;">🧳</div>
+            <div>
+              <div class="item-title">Поездка в Японию</div>
+              <div class="item-sub">План в будущее</div>
+            </div>
+          </div>
+        </td>
+        <td><span class="cat Подписки">Поездка</span></td>
+        <td>97440 сом</td>
+        <td><span class="priority Высокий">Высокий</span></td>
+      </tr>
+
+      <tr>
+        <td>
+          <div style="display:flex; align-items:center;">
+            <div class="icon" style="background:#74e49d; color:#000;">🎫</div>
+            <div>
+              <div class="item-title">Билет на аниме-фестиваль</div>
+              <div class="item-sub">Бишкек, 11-13 июля 2025 </div>
+            </div>
+          </div>
+        </td>
+        <td><span class="cat Мероприятия">Мероприятия</span></td>
+        <td>Стандарт - 500-550-600 сом (цена на входе – 650 сом)
+ФАН-билет - 1000 сом
+VIP-билет - 2000 сом</td>
+        <td><span class="priority Средний">Средний</span></td>
+      </tr>
+	   <tr>
+        <td>
+          <div style="display:flex; align-items:center;">
+            <div class="icon" style="background:#489096;">☕</div>
+            <div>
+              <div class="item-title">Посетить аниме кафе</div>
+              <div class="item-sub">Премиум план</div>
+            </div>
+          </div>
+        </td>
+        <td><span class="cat Подписки">поездка</span></td>
+        <td>5 900 сом</td>
+        <td><span class="priority Высокий">Высокий</span></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

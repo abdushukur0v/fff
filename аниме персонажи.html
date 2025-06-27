@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ПЕРСОНАЖИ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: white ;
+      color: black;
+    }
+
+    .testimonial-section {
+      max-width: 900px;
+      margin: 100px auto;
+      padding: 40px;
+      background: linear-gradient(to right,white, #02ba05	);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    .testimonial-section h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .testimonial-content {
+      display: none;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .testimonial-content.active {
+      display: flex;
+    }
+
+    .testimonial-photo {
+      flex: 0 0 150px;
+    }
+
+    .testimonial-photo img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid #fff;
+    }
+
+    .testimonial-text {
+      flex: 1;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .testimonial-author {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .testimonial-role {
+      font-size: 14px;
+      color: #c7c7c7;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 30px;
+    }
+
+    .pagination span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: white;
+      opacity: 0.4;
+      cursor: pointer;
+    }
+
+    .pagination .active {
+      opacity: 1;
+      background:black;
+    }
+  </style>
+</head>
+<body>
+
+<div class="testimonial-section">
+  <h1>ПЕРСОНАЖИ КОТОРЫЕ МНЕ НРАВЯТСЯ</h1>
+
+  <div class="testimonial-content active">
+    <div class="testimonial-photo">
+      <img src="баки перс.jpg" alt="баки ханма" />
+	    <h1>ХАНМА БАКИ</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Целеустремленность
+<br>
+Упорство
+<br>
+Одержимость силой
+<br>
+ Рискованность<br>
+Бакки Ханма — молодой, но невероятно талантливый боец, посвятивший свою жизнь боевым искусствам, чтобы превзойти своего отца, Юдзиро Ханму, сильнейшего человека на Земле. Несмотря на стремление к силе, Бакки остаётся добрым и справедливым, ценя дружбу и любовь.
+
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+
+  <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="0002.jpg" alt="0002" />
+	  <h1>002</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Харизматичная
+<br>
+Сильная воля 
+<br>
+Нежная в глубине души
+<br>
+Непокорная.<br>
+002 — загадочная и харизматичная пилотесса Франксов с клыками и рожками, известная как "Партнёр-убийца", которая мечтает обрести свою человечность и любовь. За её дерзким и ярким характером скрывается глубокая ранимость и одиночество, а её привязанность к Хиро становится главным смыслом её жизни. 
+
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+
+  <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="итачи.jpg" alt="итачи" />
+	  <h1>Итачи</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Мудрость
+<br>
+Хладнокровие
+<br>
+Сострадание
+<br>
+Сдержанность<br>
+Итачи Учиха — гениальный ниндзя клана Учиха, который пожертвовал всем ради мира, убив свой клан и став изгоем, чтобы спасти деревню. За его холодным взглядом скрывается невероятная боль, преданность и желание защитить своего младшего брата Саске. 
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+   <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="тобирама.jpg" alt="тобирама" />
+	  <h1>Тобирама</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Мудрость
+<br>
+Хладнокровие
+<br>
+Консерватизм
+<br>
+Строгость дисциплина<br>
+Тобирама Сенджу — второй Хокаге Конохи, известный как гениальный ниндзя и создатель множества техник, включая техники воды и запрещённые методы. Он был суровым, но справедливым лидером, посвятившим жизнь защите деревни и развитию шиноби. 
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+   <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="майки.jpg" alt="майки" />
+	  <h1>Майки</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Лидерство
+<br>
+Хладнокровие
+<br>
+Сострадание
+<br>
+Преданность<br>
+Майки — харизматичный и загадочный лидер Токийской банды, обладающий невероятной силой и бойцовскими навыками. Несмотря на внешнюю улыбку и добродушие, он скрывает в себе глубокую боль и тёмную сторону, которая может разрушить как его самого, так и окружающих.
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+   <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="стоун.jpg" alt="стоун" />
+	  <h1>Сэнку</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Мудрость
+<br>
+Оптимизм
+<br>
+Острый ум
+<br>
+Лидерство<br>
+Сэнку Ишигами — гениальный учёный с блестящим умом и несломимой волей, стремящийся возродить цивилизацию с помощью науки после загадочной катастрофы. Его любознательность, уверенность и вера в силу разума делают его вдохновляющим лидером и двигателем прогресса. 
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+   <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="жек ханма.jpg" alt="итачи" />
+	  <h1>Жек Ханма</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Стремление к силе
+<br>
+Жестокость
+<br>
+Стратегическое мышление
+<br>
+Самолюбие эгоизм<br>
+Жек Ханма — могущественный и жестокий боец из семьи Ханма, известный своей невероятной физической силой и безжалостным характером. Он амбициозен и хитёр, готов идти на любые меры ради власти и контроля.
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+  <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="аомине.jpg" alt="аомине" />
+	  <h1>Аомине </h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Уверенность в себе
+<br>
+Мгновенный анализ
+<br>
+физическая выносливость
+<br>
+Самолюбие эгоизм<br>
+Даики Аомине — один из самых сильных и талантливых баскетболистов в команде Тэиков, обладающий невероятной скоростью и техникой. Его стиль игры уникален, а холодный и самоуверенный характер делает его грозным соперником на площадке.
+
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+  
+  <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="аста1.jpg" alt="аста" />
+	  <h1>Аста</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Стремление к силе
+<br>
+Несгибаемая воля
+<br>
+Честность и искренность
+<br>
+Дружелюбие<br>
+Аста — энергичный и упрямый сирота, который мечтает стать Королём Магов, несмотря на то, что у него нет магических способностей. Его невероятная сила воли, упорство и умение использовать антимагию делают его уникальным бойцом, способным противостоять любым врагам.
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+  
+  <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="ями.jpg" alt="ями" />
+	  <h1>Ями</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Решительность храбрость
+<br>
+Прямолинейность
+<br>
+Стратегическое мышление
+<br>
+Ценит усилия и упорство<br>
+Ями Сукихиро — капитан Отряда Чёрного Быка, известный своей суровостью, мощной магией тьмы и необычным, прямолинейным характером. Несмотря на грубоватое поведение, он глубоко заботится о своих товарищах и верит в силу упорства и воли.
+
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+  
+   <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="хината.jpg" alt="хината" />
+	  <h1>Хината</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Решительность смелость
+<br>
+Терпение и упорство
+<br>
+Скромность<br>
+Чувствительность и забота<br>
+Хината Хьюга — застенчивая, но сильная девушка из клана Хьюга, обладающая редкой техникой "Бьякуган". Несмотря на свою робость, она полна решимости стать сильнее и защитить своих друзей, особенно Наруто, к которому испытывает глубокие чувства.
+
+
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+  <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="нагумо.jpg" alt="хината" />
+	  <h1>Нагумо</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Манипулятивность
+<br>
+Хладнокровие и расчетливость
+<br>
+Амбициозность<br>
+Независимость<br>
+Сигэру Нагумо — талантливый и амбициозный техник-кудзюцу, лидер команды по созданию проклятых духов. Он склонен к холодному расчету и безжалостным методам, ради достижения целей готов пожертвовать даже собственными товарищами.
+
+
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+  <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="ханма шуджи.jpg" alt="хината" />
+	  <h1>Ханма Шуджи</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Холодность
+<br>
+Самоуверенность и высокомерие
+<br>
+Физическая сила<br>
+Эгоизм<br>
+Ханма Шудзи — старший брат Юдзиро Ханмы и один из самых сильных бойцов в серии, известный своей безумной силой и жестокостью. Он обладает невероятной физической мощью и кровожадным характером, представляя собой опасного и непредсказуемого противника.
+
+
+
+
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+  <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="фрирен.jpg" alt="хината" />
+	  <h1>Фрирен</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Мулрость и спокойствие
+<br>
+Терпение и упорство
+<br>
+Интровертность<br>
+Любознательность<br>
+Фрирен — эльфийская волшебница, прошедшая вместе с героями долгое путешествие по уничтожению зла. После завершения миссии она начинает осознавать, насколько коротка человеческая жизнь и как важно ценить каждое мгновение, отправляясь в новое путешествие самопознания и понимания.
+
+
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+  <div class="testimonial-content">
+    <div class="testimonial-photo">
+      <img src="айзен.jpg" alt="хината" />
+	  <h1>Айзен</h1>
+    </div>
+    <div class="testimonial-text">
+      <p>Качества персонажа:
+<br>
+Хладнокровие
+<br>
+Гениальность
+<br>
+Манипулятивность<br>
+Безжалостность и жестокость<br>
+Соске Айзен — бывший капитан 5-го отряда Готея 13, обладающий гениальным умом и невероятной силой. Он известен своей хитростью и манипулятивностью, стремясь к абсолютной власти и контролю над миром.
+
+
+</p>
+      <div class="testimonial-author"></div>
+      <div class="testimonial-role"></div>
+    </div>
+  </div>
+  
+  
+  <div class="pagination">
+    <span class="dot active" onclick="showSlide(0)"></span>
+    <span class="dot" onclick="showSlide(1)"></span>
+    <span class="dot" onclick="showSlide(2)"></span>
+	<span class="dot" onclick="showSlide(3)"></span>
+	<span class="dot" onclick="showSlide(4)"></span>
+	<span class="dot" onclick="showSlide(5)"></span>
+	<span class="dot" onclick="showSlide(6)"></span>
+	<span class="dot" onclick="showSlide(7)"></span>
+	<span class="dot" onclick="showSlide(8)"></span>
+	<span class="dot" onclick="showSlide(9)"></span>
+	<span class="dot" onclick="showSlide(10)"></span>
+	<span class="dot" onclick="showSlide(11)"></span>
+	<span class="dot" onclick="showSlide(12)"></span> 
+    <span class="dot" onclick="showSlide(13)"></span>
+	<span class="dot" onclick="showSlide(14)"></span>
+  </div>
+</div>
+
+<script>
+  function showSlide(index) {
+    const contents = document.querySelectorAll('.testimonial-content');
+    const dots = document.querySelectorAll('.dot');
+    contents.forEach((el, i) => {
+      el.classList.toggle('active', i === index);
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
+  }
+</script>
+
+</body>
+</html>
