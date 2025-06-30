@@ -17,10 +17,21 @@
       <a href="манги.html">Манга</a>
       <a href="покупки.html">Бюджет</a>
     </nav>
-    <div class="search-login">
-      <input type="text" class="search-box" placeholder="Поиск...">
-      <button class="login-btn">Войти</button>
+       <div class="button-container">
+    <button class="btn" onclick="openModal('login')">Войти</button>
+    <button class="btn" onclick="openModal('register')">Регистрация</button>
+  </div>
+
+  <!-- Модальное окно -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title">Войти</h2>
+      <input type="text" id="username" placeholder="Имя пользователя">
+      <input type="password" id="password" placeholder="Пароль">
+      <button class="btn" onclick="submitForm()">Отправить</button>
     </div>
+  </div>
   </header>
 
   <!-- Видео блок -->
@@ -97,6 +108,33 @@
       </div>
     </div>
   </footer>
+<script>
+    let currentMode = 'login';
 
+    function openModal(mode) {
+      currentMode = mode;
+      document.getElementById('modal-title').innerText = mode === 'login' ? 'Войти' : 'Регистрация';
+      document.getElementById('username').value = '';
+      document.getElementById('password').value = '';
+      document.getElementById('modal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+
+    function submitForm() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      alert(`${currentMode === 'login' ? 'Вход' : 'Регистрация'}: ${username}`);
+      closeModal();
+    }
+
+    window.onclick = function(event) {
+      if (event.target == document.getElementById('modal')) {
+        closeModal();
+      }
+    }
+  </script>
 </body>
 </html>
