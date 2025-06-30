@@ -262,9 +262,77 @@
     .telegram {
       background-color: #25D366;
     }
+	
+    /* Модальное окно */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .modal-content input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .close {
+      float: right;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .btn {
+        width: 80%;
+        font-size: 16px;
+      }
+
+      .modal-content {
+        width: 95%;
+      }
+    .button-container {
+      margin-top: 100px;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      margin: 10px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      background-color: #4CAF50;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
   </style>
 </head>
 <body>
+
+ 
 
   <!-- Навигация -->
   <header>
@@ -277,10 +345,23 @@
       <a href="покупки.html">Бюджет</a>
     </nav>
     <div class="search-login">
-      <input type="text" class="search-box" placeholder="Поиск...">
-      <button class="login-btn">Войти</button>
+
+
+	 <div class="button-container">
+    <button class="btn" onclick="openModal('login')">Войти</button>
+    <button class="btn" onclick="openModal('register')">Регистрация</button>
+  </div>
+
+  <!-- Модальное окно -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title">Войти</h2>
+      <input type="text" id="username" placeholder="Имя пользователя">
+      <input type="password" id="password" placeholder="Пароль">
+      <button class="btn" onclick="submitForm()">Отправить</button>
     </div>
-	
+  </div>
   </header>
 <section class="hero">
     <video autoplay muted loop>
@@ -355,5 +436,33 @@
       <a href="https://t.me/abdushukur0v" class="telegram" target="_blank">Написать в Telegram</a>
     </div>
 	</div>
+	<script>
+    let currentMode = 'login';
+
+    function openModal(mode) {
+      currentMode = mode;
+      document.getElementById('modal-title').innerText = mode === 'login' ? 'Войти' : 'Регистрация';
+      document.getElementById('username').value = '';
+      document.getElementById('password').value = '';
+      document.getElementById('modal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+
+    function submitForm() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      alert(`${currentMode === 'login' ? 'Вход' : 'Регистрация'}: ${username}`);
+      closeModal();
+    }
+
+    window.onclick = function(event) {
+      if (event.target == document.getElementById('modal')) {
+        closeModal();
+      }
+    }
+  </script>
 </body>
 </html>
